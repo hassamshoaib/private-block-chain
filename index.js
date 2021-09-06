@@ -1,5 +1,5 @@
 const Block = require("./classes/block");
 
-const block = new Block("foo", "bar", "baz", "baz");
+const block = Block.mineBlock(Block.genesis(), ["hassam"]);
 
 console.log(block.toString());
