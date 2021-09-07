@@ -1,5 +1,8 @@
-const Block = require("./classes/block");
+const BlockChain = require("./classes/block-chain");
 
-const block = Block.mineBlock(Block.genesis(), ["hassam"]);
+blockChain = new BlockChain();
 
-console.log(block.toString());
+blockChain.addBlock(["Hassam"]);
+blockChain.addBlock(["Shoaib"]);
+
+blockChain.printChain();
